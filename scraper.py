@@ -5,7 +5,7 @@ import sys
 
 
 def ScrapePlayer(URL):
-  cont = input("Continue scraping? y/n ---> ")
+  cont = input("Continue scraping for replay links? y/n ---> ")
   if (cont.lower() !="y"):
     print("Stopping...")
     exit()
@@ -23,7 +23,5 @@ def ScrapePlayer(URL):
     while (count < 10):
       count+=1
       print(links[count]['href'], file=f)
-      #print('hello world!!', file=f)
-    #f.close()
 
   print("All done!!")
